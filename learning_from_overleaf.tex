@@ -3,26 +3,31 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{parskip}
+\usepackage{geometry}
 \graphicspath{{images/}}
 
-\title{My LaTeX	 Learning Road, From Zero to Inf}
-\author{Guanzheng Wang, National University of Defense Technology}
+\title{My \LaTeX{} Learning Road, From Zero to Inf}
+\author{Guanzheng Wang, Northwesten Polytechnical }
 \date{November 1, 2020}
 
-
+\geometry{left=2.0cm,right=2.0cm,top=3.0cm,bottom=3.0cm}
 \begin{document}
 % We are going to write a comments, which will not be printed to the pdf file
 \maketitle
 
+\tableofcontents 
+
+\newpage
 \begin{abstract}
 This paper is something when practicing LateX, and this is just an abstract. Let's begin from now on, come to use LaTeX more and more.
 \end{abstract}
 
+
+\newpage
+
 \part{Beginnings}
 
-\part{Go On}
-
-\section{First Chapter}
+\section{Let We Go}
 
 
 First document. Now we are going to change our line to a new one.\\
@@ -54,6 +59,7 @@ Some of the greatest \emph{discoveries} in science were mde by accident.
 As you can see in the Figure \ref{fig:processor}. Also in the page \pageref{fig:processor} is the same example.
 
 
+So what about the other things?
 % add a list
 \begin{itemize}
 	\item CPU: I9-9900KF
@@ -68,6 +74,11 @@ There are many great computers for game users or professors. I used to like God 
 	\item Clevo P870
 	\item Clevo P775
 \end{enumerate}
+
+
+
+\section{Phisics}
+
 
 In Physics, the mass-energy equivalence is stated by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
 
@@ -95,6 +106,45 @@ Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case 
 Mathematical operations are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
 
 
+
+\part{Go on the next part}
+
+\section{Draw a table}
+
+
+Let's do something special.
+
+Next, we are going to creat a table.
+\begin{center}
+	\begin{tabular}{|c|r|c|}
+		\hline
+		cell1 & cell2 & cell3 \\
+		\hline		
+		cell4 & cell5 & cell6 \\
+		\hline		
+		cell7 & cell8 & cell9 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Do something more complex}
+Let's see another example:\\
+Table \ref{table:Just an example} is an example of referenced \LaTeX{} elements.
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{||c c c c||}
+		\hline
+		Col1 & Col2 & Col3 & Col4 \\ [0.5ex]
+		\hline\hline
+		1 & 6 & 87837 & 787 \\
+		\hline
+		2 & 7 & 78 & 5417 \\ [1ex]
+		\hline	
+		\end{tabular}
+		\caption{Table to test captions and labels}
+		\label{table:Just an example}
+	\end{center}
+\end{table}
 
 
 
